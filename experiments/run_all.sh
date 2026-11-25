@@ -64,7 +64,7 @@ for m in $MODELS; do
   $PY experiments/lm_probe.py --models "$m" --items-per-batch "$ITEMS_PER_BATCH" >> "$log" 2>&1 \
     || echo "!!! E2-E4 failed for $m (see $log)" | tee -a "$log"
   unset HF_HUB_OFFLINE
-  # SAVE_ACTS=1 makes lm_probe.py keep all activations; UPLOAD_ACTS=1 moves them to the private HF dataset
+  # SAVE_ACTS=1 makes lm_probe.py keep all activations; UPLOAD_ACTS=1 moves them to the HF dataset
   # (verified by sha256, local copy deleted only then) so the disk does not fill up
   if [ "${SAVE_ACTS:-0}" = "1" ] && [ "${UPLOAD_ACTS:-0}" = "1" ]; then
     SSL_CERT_FILE=${SSL_CERT_FILE:-/etc/ssl/certs/ca-certificates.crt} \

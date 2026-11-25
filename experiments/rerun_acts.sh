@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Third pass, after rerun_v2.sh: E2-E4 again for every model with all activations saved (SAVE_ACTS=1) and
-# uploaded to the private HF dataset (UPLOAD_ACTS=1, token in /root/.hf_token). The E2-E3 numbers come out the
+# uploaded to the HF dataset (UPLOAD_ACTS=1, token in /root/.hf_token). The E2-E3 numbers come out the
 # same; the Gemma-3 family (gemma3, MamayLM, Lapa) also gets its E4 features in float32 (float16 overflowed).
 # E1 is already complete -> skipped. Ends with analyze.py (inside run_night.sh).
 #

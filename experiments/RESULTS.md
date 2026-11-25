@@ -13,7 +13,7 @@
 | `data/results/gpu/<model>/e1.jsonl` | E1 по кожному питанню: `probs`, `pred`, `gold`, `mass`, `chosen_kind`, `method` |
 | `data/results/gpu/<model>/lm_probe/shard_*.parquet` | E2/E3 по кожному варіанту: сюрпризали та `cos_{span,right,sent}_vs_{ORIG,NEUTRAL}` по шарах |
 | `data/results/gpu/<model>/meta.json` | HF id, кількість шарів, d_model, id токенів відповідей |
-| HF dataset `KOTAYE/llm-idiom-probe-activations` (приватний) | **Усі активації**: для кожного варіанта, усіх шарів і трьох пулінгів (span / right / sent), bf16. Формат описано в README датасету. Читати так: `common.bf16_to_float32(np.load(f)["span"])` |
+| HF dataset [`KOTAYE/llm-idiom-probe-activations`](https://huggingface.co/datasets/KOTAYE/llm-idiom-probe-activations) (публічний, 101 ГБ) | **Усі активації**: для кожного варіанта, усіх шарів і трьох пулінгів (span / right / sent), bf16. Формат описано в README датасету. Читати так: `common.bf16_to_float32(np.load(f)["span"])` |
 
 Перерахувати таблиці можна командою `python experiments/analyze.py`; вона працює на CPU за кілька хвилин.
 E4-фічі (`lm_probe/*.npz`) у git не потрапили, бо вони великі. Для E4 потрібні або вони (`run_all.sh`

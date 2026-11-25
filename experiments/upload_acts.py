@@ -1,4 +1,4 @@
-"""Upload one model's saved activations (lm_probe/acts/*.npz) to a private Hugging Face dataset repo, check every
+"""Upload one model's saved activations (lm_probe/acts/*.npz) to a Hugging Face dataset repo (created private; the free private quota is ~100 GB, so the full set is public), check every
 file's sha256 on the Hub, then delete the local copy and leave a shard_XXXX.uploaded marker (lm_probe.py treats
 the shard as done). Nothing is deleted unless its checksum on the Hub matches.
 

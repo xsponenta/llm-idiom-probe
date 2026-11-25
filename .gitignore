@@ -1,6 +1,6 @@
 .env
 data/*
-# GPU eval results are shared; heavy or superseded files are not (all activations: private HF dataset)
+# GPU eval results are shared; heavy or superseded files are not (all activations: HF dataset KOTAYE/llm-idiom-probe-activations)
 !data/results/
 data/results/*
 !data/results/gpu/
