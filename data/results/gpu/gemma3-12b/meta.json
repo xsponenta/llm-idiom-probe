@@ -1,0 +1,54 @@
+{
+  "model": "gemma3-12b",
+  "hf_id": "unsloth/gemma-3-12b-it",
+  "n_layers": 48,
+  "d_model": 3840,
+  "dtype": "torch.bfloat16",
+  "gpu": "NVIDIA RTX PRO 5000 Blackwell",
+  "e1_letter_token_ids": {
+    "A": [
+      236776,
+      562
+    ],
+    "B": [
+      236799,
+      603
+    ],
+    "C": [
+      236780,
+      565
+    ],
+    "D": [
+      236796,
+      622
+    ],
+    "E": [
+      236788,
+      645
+    ],
+    "F": [
+      236811,
+      633
+    ]
+  },
+  "e1_t2_words": {
+    "yes": [
+      " \u0442\u0430\u043a",
+      " \u0422\u0430\u043a",
+      " **\u0442\u0430\u043a",
+      " **\u0422\u0430\u043a"
+    ],
+    "no": [
+      " \u043d\u0456",
+      " \u041d\u0456",
+      " **\u043d\u0456",
+      " **\u041d\u0456"
+    ]
+  },
+  "lm_probe_post_tokens": 3,
+  "lm_probe_pools": [
+    "span",
+    "right",
+    "sent"
+  ]
+}
