@@ -1,6 +1,22 @@
 .env
-data/
+data/*
+# GPU eval results are shared; heavy or superseded files are not (all activations: private HF dataset)
+!data/results/
+data/results/*
+!data/results/gpu/
+data/results/gpu/**/*.npz
+data/results/gpu/**/e1_v1.jsonl
+data/results/gpu/**/lm_probe_v1/
+data/results/gpu/**/lm_probe_fp16/
+data/results/gpu/**/acts/
 .venv/
 __pycache__/
 .ipynb_checkpoints/
 .DS_Store
+# local notes and course materials, not part of the project
+*.pdf
+*.png
+!data/results/gpu/summary/*.png
+2026_*_this_session_is_being_continued*.txt
+substitutions_v1.csv
+*.log

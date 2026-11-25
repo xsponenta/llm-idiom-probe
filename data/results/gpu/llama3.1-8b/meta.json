@@ -1,0 +1,54 @@
+{
+  "model": "llama3.1-8b",
+  "hf_id": "unsloth/Llama-3.1-8B-Instruct",
+  "n_layers": 32,
+  "d_model": 4096,
+  "dtype": "torch.bfloat16",
+  "gpu": "NVIDIA RTX PRO 5000 Blackwell",
+  "e1_letter_token_ids": {
+    "A": [
+      32,
+      362
+    ],
+    "B": [
+      33,
+      426
+    ],
+    "C": [
+      34,
+      356
+    ],
+    "D": [
+      35,
+      423
+    ],
+    "E": [
+      36,
+      469
+    ],
+    "F": [
+      37,
+      435
+    ]
+  },
+  "e1_t2_words": {
+    "yes": [
+      " \u0442\u0430\u043a",
+      " \u0422\u0430\u043a",
+      " **\u0442\u0430\u043a",
+      " **\u0422\u0430\u043a"
+    ],
+    "no": [
+      " \u043d\u0456",
+      " \u041d\u0456",
+      " **\u043d\u0456",
+      " **\u041d\u0456"
+    ]
+  },
+  "lm_probe_post_tokens": 3,
+  "lm_probe_pools": [
+    "span",
+    "right",
+    "sent"
+  ]
+}

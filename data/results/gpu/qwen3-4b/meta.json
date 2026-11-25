@@ -1,0 +1,54 @@
+{
+  "model": "qwen3-4b",
+  "hf_id": "Qwen/Qwen3-4B",
+  "n_layers": 36,
+  "d_model": 2560,
+  "dtype": "torch.bfloat16",
+  "gpu": "NVIDIA RTX PRO 5000 Blackwell",
+  "e1_letter_token_ids": {
+    "A": [
+      32,
+      362
+    ],
+    "B": [
+      33,
+      425
+    ],
+    "C": [
+      34,
+      356
+    ],
+    "D": [
+      35,
+      422
+    ],
+    "E": [
+      36,
+      468
+    ],
+    "F": [
+      37,
+      434
+    ]
+  },
+  "e1_t2_words": {
+    "yes": [
+      " \u0442\u0430\u043a",
+      " \u0422\u0430\u043a",
+      " **\u0442\u0430\u043a",
+      " **\u0422\u0430\u043a"
+    ],
+    "no": [
+      " \u043d\u0456",
+      " \u041d\u0456",
+      " **\u043d\u0456",
+      " **\u041d\u0456"
+    ]
+  },
+  "lm_probe_post_tokens": 3,
+  "lm_probe_pools": [
+    "span",
+    "right",
+    "sent"
+  ]
+}
